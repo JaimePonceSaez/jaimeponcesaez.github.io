@@ -3,109 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jaime Ponce Sáez | Portafolio</title>
+    <title>Jaime Ponce Sáez | Portafolio IT</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
     <style>
         body { background-color: #0f172a; color: #f1f5f9; }
         .gradient-text { background: linear-gradient(90deg, #38bdf8, #818cf8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
         .card { background: #1e293b; border: 1px solid #334155; transition: 0.3s; }
         .card:hover { border-color: #38bdf8; transform: translateY(-3px); }
+        .skill-badge { background: #1e293b; border: 1px solid #334155; padding: 1rem; border-radius: 0.75rem; text-align: center; transition: 0.3s; }
+        .skill-badge:hover { border-color: #38bdf8; background: #1e293b; }
+        .skill-badge i { font-size: 2.5rem; margin-bottom: 0.5rem; display: block; }
     </style>
 </head>
 <body class="font-sans antialiased">
 
     <header class="pt-16 pb-8 px-6 text-center border-b border-slate-800">
         <h1 class="text-5xl font-black mb-4 uppercase tracking-tighter">Jaime <span class="gradient-text">Ponce Sáez</span></h1>
-        <p class="text-xl text-slate-400 max-w-2xl mx-auto uppercase tracking-widest font-light mb-6 text-center">Desarrollador Multiplataforma & Técnico en Sistemas</p>
+        <p class="text-xl text-slate-400 max-w-2xl mx-auto uppercase tracking-widest font-light mb-6">Desarrollador Multiplataforma & Técnico en Sistemas</p>
         
         <div class="flex flex-wrap justify-center gap-6 text-slate-400 mb-8">
             <a href="mailto:jaimeponcesaez@gmail.com" class="hover:text-sky-400 transition"><i class="fas fa-envelope mr-2"></i>jaimeponcesaez@gmail.com</a>
-            <span><i class="fas fa-location-dot mr-2"></i>Minglanilla, España</span>
+            <span><i class="fas fa-location-dot mr-2"></i>Kraków, Polonia 🇵🇱 / Minglanilla, España 🇪🇸</span>
         </div>
 
-        <div class="flex justify-center mt-6">
-    <img src="jaimephoto.jpg" alt="Jaime Ponce" class="w-48 h-48 rounded-full border-4 border-sky-400 shadow-2xl shadow-sky-500/30 object-cover bg-slate-800">
+        <div class="flex justify-center">
+            <img src="jaimephoto.jpg" alt="Jaime Ponce" class="w-44 h-44 rounded-full border-4 border-sky-400 shadow-xl shadow-sky-500/20 object-cover bg-slate-800" onerror="this.src='https://ui-avatars.com/api/?name=Jaime+Ponce&background=0ea5e9&color=fff&size=200'">
         </div>
     </header>
 
-    <main class="max-w-4xl mx-auto px-6 py-16 space-y-16">
+    <main class="max-w-4xl mx-auto px-6 py-16 space-y-20">
 
         <section>
-            <h2 class="text-2xl font-bold mb-8 flex items-center gap-3"><i class="fas fa-graduation-cap text-sky-400"></i> Educación</h2>
-            <div class="space-y-4">
-                <div class="card p-5 rounded-lg border-l-4 border-sky-500">
-                    <div class="flex justify-between items-start">
-                        <h3 class="font-bold text-lg text-sky-300">CFGS Desarrollo de Aplicaciones Multiplataforma</h3>
-                        <span class="text-xs font-mono text-slate-500">2024 - Actual</span>
-                    </div>
-                    <p class="text-sm text-slate-400">IESO Cañada de la Encina</p>
-                </div>
-                <div class="card p-5 rounded-lg border-l-4 border-slate-500">
-                    <div class="flex justify-between items-start">
-                        <h3 class="font-bold text-lg text-slate-300">CFGM Sistemas Microinformáticos y Redes</h3>
-                        <span class="text-xs font-mono text-slate-500">2022 - 2024</span>
-                    </div>
-                    <p class="text-sm text-slate-400">IESO Cañada de la Encina</p>
-                </div>
-                <div class="card p-5 rounded-lg border-l-4 border-slate-700">
-                    <div class="flex justify-between items-start">
-                        <h3 class="font-bold text-lg text-slate-300">ESO</h3>
-                        <span class="text-xs font-mono text-slate-500">2018 - 2022</span>
-                    </div>
-                    <p class="text-sm text-slate-400">IESO Eva Escribano</p>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <h2 class="text-2xl font-bold mb-8 flex items-center gap-3"><i class="fas fa-certificate text-indigo-400"></i> Cursos</h2>
-            <div class="grid md:grid-cols-2 gap-6">
-                <div class="card p-6 rounded-xl border-t-2 border-indigo-500 text-center">
-                    <h3 class="font-bold mb-1">IA con Python</h3>
-                    <p class="text-xs text-indigo-400 mb-2 uppercase font-bold italic">Santander Open Academy</p>
-                </div>
-                <div class="card p-6 rounded-xl border-t-2 border-green-500 text-center">
-                    <h3 class="font-bold mb-1">SEO y Content Marketing</h3>
-                    <p class="text-xs text-green-400 mb-2 uppercase font-bold italic">Santander Open Academy</p>
-                </div>
+            <h2 class="text-2xl font-bold mb-8 flex items-center gap-3"><i class="fas fa-code text-sky-400"></i> Habilidades Técnicas</h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+                <div class="skill-badge"><i class="devicon-java-plain colored"></i><span>Java</span></div>
+                <div class="skill-badge"><i class="devicon-python-plain colored"></i><span>Python</span></div>
+                <div class="skill-badge"><i class="devicon-azuresqldatabase-plain colored"></i><span>SQL</span></div>
+                <div class="skill-badge"><i class="devicon-html5-plain colored"></i><span>HTML5</span></div>
+                <div class="skill-badge"><i class="devicon-tailwindcss-original colored"></i><span>Tailwind</span></div>
+                <div class="skill-badge"><i class="devicon-git-plain colored"></i><span>Git</span></div>
+                <div class="skill-badge"><i class="devicon-github-original"></i><span>GitHub</span></div>
+                <div class="skill-badge"><i class="devicon-vscode-plain colored"></i><span>VS Code</span></div>
             </div>
         </section>
 
         <section>
             <h2 class="text-2xl font-bold mb-8 flex items-center gap-3"><i class="fas fa-briefcase text-sky-400"></i> Experiencia Laboral</h2>
-            <div class="space-y-6">
+            <div class="space-y-8">
                 <div class="relative pl-8 border-l border-slate-700">
-                    <div class="absolute -left-[5px] top-1 w-2.5 h-2.5 rounded-full bg-sky-400 shadow-[0_0_10px_rgba(56,189,248,0.8)]"></div>
+                    <div class="absolute -left-[5px] top-1 w-2.5 h-2.5 rounded-full bg-sky-500 shadow-[0_0_10px_rgba(56,189,248,0.8)]"></div>
                     <div class="flex flex-wrap justify-between items-start gap-2">
                         <h3 class="text-lg font-bold text-sky-300">Prácticas Erasmus+ (Desarrollo IT)</h3>
                         <span class="text-xs font-mono bg-sky-500/10 text-sky-400 px-2 py-1 rounded">ACTUAL</span>
                     </div>
-                    <p class="text-white font-medium mb-1 italic">ELTE Sp. z o.o. | Cracovia, Polonia</p>
-                    <p class="text-sm text-slate-400">Desarrollo de proyectos tecnológicos en una consultora informática internacional. Adaptación a entornos de trabajo multiculturales y mejora de competencias técnicas en sistemas.</p>
+                    <p class="text-white font-medium mb-1 italic">ELTE Sp. z o.o. | Kraków, Polonia</p>
+                    <p class="text-sm text-slate-400 italic">Desarrollo y mantenimiento de sistemas en entorno internacional.</p>
                 </div>
-                <div class="card p-6 rounded-xl">
-                    <h3 class="font-bold text-lg">Entrenador Deportivo</h3>
-                    <p class="text-sky-400 text-sm font-mono mb-2">E.D.M Minglanilla | 2025 - Actual</p>
-                    <p class="text-sm text-slate-400">Liderazgo y enseñanza técnica en fútbol.</p>
-                </div>
-                <div class="card p-6 rounded-xl">
-                    <h3 class="font-bold text-lg">Profesor Particular de Informática</h3>
-                    <p class="text-sky-400 text-sm font-mono mb-2">AMPA Salero | 2024 - 2025</p>
-                    <p class="text-sm text-slate-400">Enseñanza de herramientas digitales y ciberseguridad.</p>
-                </div>
-                <div class="card p-6 rounded-xl">
-                    <h3 class="font-bold text-lg">Responsable de Contenidos Web</h3>
-                    <p class="text-sky-400 text-sm font-mono mb-2">SEINPUIG | 2024</p>
+                <div class="relative pl-8 border-l border-slate-700">
+                    <div class="absolute -left-[5px] top-1 w-2.5 h-2.5 rounded-full bg-slate-500"></div>
+                    <h3 class="text-lg font-bold">Responsable de Contenidos Web</h3>
+                    <p class="text-sky-400 text-sm mb-2 font-mono">SEINPUIG | 2024</p>
                     <p class="text-sm text-slate-400">Gestión de WordPress, Shopify y optimización SEO.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="text-2xl font-bold mb-8 flex items-center gap-3"><i class="fas fa-graduation-cap text-sky-400"></i> Educación</h2>
+            <div class="space-y-4">
+                <div class="card p-5 rounded-lg border-l-4 border-sky-500">
+                    <h3 class="font-bold text-lg text-sky-300">CFGS Desarrollo de Aplicaciones Multiplataforma</h3>
+                    <p class="text-sm text-slate-400">IESO Cañada de la Encina | 2024 - Actual</p>
+                </div>
+                <div class="card p-5 rounded-lg border-l-4 border-slate-500">
+                    <h3 class="font-bold text-lg text-slate-300">CFGM Sistemas Microinformáticos y Redes</h3>
+                    <p class="text-sm text-slate-400">IESO Cañada de la Encina | 2022 - 2024</p>
                 </div>
             </div>
         </section>
 
     </main>
 
-    <footer class="py-12 text-center border-t border-slate-900 text-slate-600 text-xs">
-        <p>© 2026 JAIME PONCE SÁEZ | MINGLANILLA</p>
+    <footer class="py-12 text-center border-t border-slate-900 text-slate-600 text-xs uppercase tracking-widest">
+        <p>© 2026 JAIME PONCE SÁEZ | KRAKÓW - MINGLANILLA</p>
     </footer>
 
 </body>
